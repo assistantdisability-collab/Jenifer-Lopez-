@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarjeta Dorada de Fan - Venezuela</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 20px auto;
+    background: #151515;
+    border: 1px solid #c49a37;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 25px #c49a3730;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #090909, #33240b);
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    border: 3px solid #e5bd57;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #e5bd57;
+}
+
+.header h1 {
+    color: #e5bd57;
+    margin: 15px 0 8px;
+    font-size: 25px;
+}
+
+.header p {
+    color: #ddd;
+    font-size: 13px;
+}
+
+.photo {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    background: #292014;
+}
+
+.form-area {
+    padding: 25px;
+}
+
+.form-area h2 {
+    color: #e5bd57;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #aaa;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.demo-warning {
+    background: #30240e;
+    color: #f1d38a;
+    border: 1px solid #8d6d2c;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 8px;
+    color: #e5bd57;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    background: #222;
+    border: 1px solid #705a2a;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #e5bd57;
+}
+
+input[type="file"] {
+    padding: 12px;
+    font-size: 12px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #e5bd57, #a77b23);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #111;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.success {
+    display: none;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.success h2 {
+    color: #e5bd57;
+    margin-bottom: 15px;
+}
+
+.success p {
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.footer {
+    text-align: center;
+    padding: 18px;
+    color: #777;
+    font-size: 12px;
+    border-top: 1px solid #333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ENCABEZADO -->
+
+    <div class="header">
+
+        <div class="logo">★</div>
+
+        <h1>TARJETA DORADA DE FAN</h1>
+
+        <p>Concepto de Tarjeta de Fan de Venezuela</p>
+
+    </div>
+
+    <!-- FOTO DE JENNIFER LOPEZ -->
+
+    <img
+        src="https://m.media-amazon.com/images/M/MV5BMTY0OTY3ODA3OV5BMl5BanBnXkFtZTcwMzMyMzQ1NQ@@._V1_.jpg"
+        alt="Jennifer Lopez"
+        class="photo"
+    >
+
+    <!-- JENNIFER LOPEZ-->
+
+    <div class="form-area" id="registration">
+
+        <h2>Formulario de Registro de Jennifer Lopez</h2>
+
+        <p class="description">
+            ¡Bienvenido! Complete el formulario de demostración a continuación.
+        </p>
+
+        <div class="demo-warning">
+            
+        </div>
+
+        <form id="fanForm">
+
+            <label>Nombre</label>
+            <input
+                type="text"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+            <label>Apellido</label>
+            <input
+                type="text"
+                placeholder="Ingrese su apellido"
+                required
+            >
+
+            <label>Fecha de Nacimiento</label>
+            <input
+                type="date"
+                required
+            >
+
+            <label>Correo Electrónico</label>
+            <input
+                type="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+            >
+
+            <label>Número de Teléfono</label>
+            <input
+                type="tel"
+                placeholder="Ingrese su número de teléfono"
+                required
+            >
+
+            <label>País</label>
+            <select required>
+                <option value="">Seleccione el país</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+
+            <label>Dirección Residencial Completa</label>
+            <textarea
+                placeholder="Ingrese su dirección residencial completa"
+                required
+            ></textarea>
+
+            <label>Cargar Fotografía del Pasaporte</label>
+            <input
+                type="file"
+                accept="image/*"
+                required
+            >
+
+            <button type="submit">
+                ENVIAR REGISTRO
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- MENSAJE DE ÉXITO -->
+
+    <div class="success" id="success">
+
+        <h2>✓ ¡Registro Recibido!</h2>
+
+        <p>
+            Gracias por su interés.
+
+            Hemos recibido su información.
+            Nos pondremos en contacto con usted en breve.
+        </p>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+
+    <div class="footer">
+        
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("fanForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("registration")
+    .style.display = "none";
+
+    document.getElementById("success")
+    .style.display = "block";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+</script>
+
+</body>
+      </html>
+      
